@@ -1,0 +1,321 @@
+*
+body   {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(93, 92, 92);
+}
+
+.header_container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {    
+    list-style: none; 
+}
+
+.container {
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_container .menu .menu__wrapper {
+    list-style-type: none;  
+}
+
+.header_container .menu .menu__wrapper {
+    text-decoration: none; 
+    display: inline;
+    padding: 0 10px;
+    font-size: 20px;
+    border-bottom: solid 3px rgb(42, 90, 179) transparent;
+}
+
+.header_container .menu .menu__wrapper .header_button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 33px 15px;
+    color: inherit;
+    border-bottom: 4px solid transparent;
+}
+
+.header_container .menu .menu__wrapper :hover {
+    transition: .3s;
+    border-bottom-color: rgb(42, 90, 179);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.menu {
+    display: flex;
+    text-transform: capitalize 
+}
+
+.nav {
+    width: 100%;
+}
+
+.container__block1-text {
+    color: white; 
+}
+
+.container__block1 .container__block1-text h3{
+    font-size: 32px;
+}
+
+.container__block1 .container__block1-text p{
+    font-size: 22px;
+    max-width: 280px; 
+}
+
+.container__block1 {
+    background-image: url(../images/block_1/background.png);
+    background-size: cover;
+    background-repeat :no-repeat;
+    padding: 40px 0 14px;
+    
+}
+
+.container__block1 .container__block1-wrapper{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+
+.container__block1 .img_iphone , .container__block1 .container__block1-text{
+    width: 50%;
+}
+
+
+.container__block1 .container__block1-wrapper .container__block1-text .button_block1{
+    padding: 25px 0;
+}
+
+
+.container__block1 .container__block1-wrapper .container__block1-text .button_block1 a{ 
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    background-color:rgb(62, 112, 206);
+    padding: 10px 25px;
+}
+
+.container__block1 .container__block1-wrapper .container__block1-text .button_block1  :hover {
+    border-radius: 20px;
+    transition: 0.4s ;
+
+}
+
+
+.container__block1 .img_back {
+    width: 100%;
+}
+
+.container__block2-parent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container__block2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.block2_images {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container__block2-wrapper_1 .block2_info {
+    text-align: center;
+    padding-top: 35px;
+}
+.container__block2-wrapper_1 .block2_info p{
+    margin-top: 6px;
+}
+
+.container__block2-wrapper_1 h4 {
+    color: rgb(27, 100, 218);
+}
+
+.container__block3-wrapper {
+    display: flex;
+}
+
+.container__block3-parent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container__block3 .container__block3-image-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.container__block3 .container__block3-image-info .block3_image {
+    width: 50%
+}
+
+.container__block3 .container__block3-text {
+    width: 50%;
+}
+
+.container__block3 .container__block3-image-info .block3_image-cart {
+    max-width: 352px;
+}
+
+.container__block3-parent .container__block3 h3 {
+    padding: 0 0 25px;
+    font-size: 35px;
+
+}
+
+.container__block3-parent .container__block3 .container__block3-text h4 {
+    font-size: 25px;
+    padding: 0 0 15px;
+}
+
+.container__block3-parent .container__block3 .container__block3-text p {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.footer_info {
+    text-align: center;
+    border-top: rgb(199, 195, 195) 1px solid ;
+    padding: 30px 0;
+}
+
+@media(max-width : 767px) {
+    .header_container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .header_container .logo {
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    .container__block1-wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__block1 .container__block1-wrapper .container__block1-text h3{
+      text-align: center;
+      font-size: 7vw;
+    }
+
+    .container__block1 .container__block1-wrapper .container__block1-text .button_block1{
+        display: flex;
+       justify-content: center;
+    }
+
+    .container__block2 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container__block2 .block2_images{
+       padding: 30px 0 0 0;
+    }
+
+    .container__block3-parent .container__block3-image-info {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__block3-parent .container__block3 .container__block3-name {
+        justify-content: center;
+        display: flex;
+    }
+    
+    .container__block3-parent .container__block3 .container__block3-text h4 {
+        justify-content: center;
+        display: flex;
+        padding-top: 25px;
+        text-align: center;
+
+    }
+
+    .container__block3-parent .container__block3 .block3_image .block3_image-cart {
+     width: 100%;
+    }
+
+    .container__block1 .container__block1-text p {
+        text-align: center;
+        display: block;
+        max-width: 100%;
+    }
+
+    .container__block1 .container__block1-text{
+        width: 100%;
+    }
+
+    .container__block3 .container__block3-text {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_iphone {
+        width: auto;
+    }
+}
+
+@media(max-width : 576px) {
+
+    .header_container .menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header_container .menu .menu__wrapper {
+        width: calc(25% - 15px);
+        padding: 0;
+        text-align: center;
+    }
+
+    .header_container .menu .menu__wrapper:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .header_container .menu .menu__wrapper .header_button {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header_container .menu .menu__wrapper .header_button {
+        font-size: 5vw;
+    }
+
+    .container__block3-parent .container__block3 h3 {
+        font-size: 9vw;
+        text-align: center;
+    }
+}
+
+
